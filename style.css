@@ -14,6 +14,34 @@ body {
   font-family: "Inter", sans-serif;
   line-height: 1;
   font-weight: 400;
+  color: #141414;
+}
+
+h4 {
+  font-family: "Inter";
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  margin-top: 32px;
+}
+
+h2 {
+  font-family: "IBM Plex Sans";
+  margin-top: 1rem;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #141414;
+}
+
+p {
+  font-size: 2rem;
+  padding-bottom: 32px;
+  margin-top: 16px;
+  letter-spacing: 0.009em;
+  line-height: 1.5;
+  color: #1f2d3d;
 }
 
 /* ************************************** */
@@ -97,6 +125,11 @@ body {
   text-decoration: none;
 }
 
+.restricted-width {
+  width: 65%;
+  max-width: 1120px;
+}
+
 /* ************************************** */
 /* HERO  */
 /* ************************************** */
@@ -104,10 +137,16 @@ body {
 #hero {
   height: 100vh;
   position: relative;
-  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+  background-image: linear-gradient(
+    180deg,
+    rgb(247, 247, 248, 0),
+    92%,
+    rgb(247, 247, 248, 1)
+  );
 }
 
 .hero-content {
@@ -119,13 +158,11 @@ body {
 
 .blue {
   position: absolute;
-  overflow: hidden;
   left: 0;
   z-index: -1;
 }
 .red {
   position: absolute;
-  overflow: hidden;
   right: 0;
   top: 0;
   z-index: -1;
@@ -133,7 +170,6 @@ body {
 
 .yellow {
   position: absolute;
-  overflow: hidden;
   right: 0;
   bottom: 0;
   z-index: -1;
@@ -150,6 +186,7 @@ body {
 
   background: rgba(232, 197, 204, 0.8);
   border: 3px solid #b33e55;
+  box-shadow: 0px 2px 4px rgb(179 62 85 / 20%);
   border-radius: 100px;
 }
 
@@ -247,7 +284,94 @@ h1 {
 }
 
 #s2 {
-  color: #ffead0;
+  color: #7f747e;
   opacity: 0;
-  z-index: -10;
+}
+
+/* ************************************** */
+/*INTRODUCTION  */
+/* ************************************** */
+
+#introduction {
+  background-color: #f7f7f8;
+  height: 1000px;
+  padding: 8rem 0;
+}
+
+.indexcontent {
+  margin: 0 auto;
+}
+
+.h41 {
+  color: #b33e55;
+}
+
+.high1 {
+  color: #b33e55;
+  background: #f7ecee;
+  border-radius: 0.25rem;
+  padding-inline-start: 0.25rem;
+  padding-inline-end: 0.25rem;
+}
+
+.text-link {
+  color: #b33e55;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.indexmain {
+  padding-top: 3.2rem;
+  display: grid;
+  grid-template-columns: 2.5fr 3fr;
+  grid-gap: 3.2rem;
+}
+
+.images {
+  grid-area: 1 / 1;
+  aspect-ratio: 1 / 0.8;
+  width: 100%;
+  border-radius: 1.6rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+#above {
+  transform: rotate(-3deg);
+  z-index: 1;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 6%), 0 8px 12px rgb(0 0 0 / 30%);
+  background-image: url(assets/img1.png);
+  background-size: cover;
+}
+
+#below {
+  transform: rotate(3deg);
+  box-shadow: 0 1px 2px rgb(0 0 0 / 6%), 0 8px 12px rgb(0 0 0 / 13%);
+  background-image: url(assets/img2.png);
+  background-size: cover;
+}
+
+#above-caption {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.75);
+  backdrop-filter: saturate(180%) blur(20px);
+  color: #1f2d3d;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  padding: 0.8rem 1.6rem;
+  border-radius: 0 0 1.6rem 1.6rem;
+}
+
+#below-caption {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.75);
+  backdrop-filter: saturate(180%) blur(20px);
+  color: #1f2d3d;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  padding: 0.8rem 1.6rem;
+  border-radius: 0 0 1.6rem 1.6rem;
 }
