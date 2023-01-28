@@ -121,7 +121,6 @@ p {
   font-size: 2.4rem;
   font-weight: 600;
   color: #b33e55;
-  margin-top: 1.6rem;
   text-decoration: none;
 }
 
@@ -145,7 +144,7 @@ p {
     180deg,
     rgb(247, 247, 248, 0),
     92%,
-    rgb(247, 247, 248, 1)
+    rgb(249, 250, 252, 1)
   );
 }
 
@@ -293,8 +292,7 @@ h1 {
 /* ************************************** */
 
 #introduction {
-  background-color: #f7f7f8;
-  height: 1000px;
+  background-color: rgb(249, 250, 252, 1);
   padding: 8rem 0;
 }
 
@@ -318,6 +316,12 @@ h1 {
   color: #b33e55;
   text-decoration: underline;
   text-underline-position: under;
+  text-underline-offset: 0.2rem;
+  transition: all 0.3s;
+}
+
+.text-link:hover {
+  color: #d18b99;
 }
 
 .indexmain {
@@ -345,6 +349,7 @@ h1 {
   box-shadow: 0 1px 2px rgb(0 0 0 / 6%), 0 8px 12px rgb(0 0 0 / 30%);
   background-image: url(assets/img1.png);
   background-size: cover;
+  background-color: lightgray;
 }
 
 #below {
@@ -352,6 +357,7 @@ h1 {
   box-shadow: 0 1px 2px rgb(0 0 0 / 6%), 0 8px 12px rgb(0 0 0 / 13%);
   background-image: url(assets/img2.png);
   background-size: cover;
+  background-color: lightgray;
 }
 
 #above-caption {
@@ -363,6 +369,10 @@ h1 {
   line-height: 1.5;
   padding: 0.8rem 1.6rem;
   border-radius: 0 0 1.6rem 1.6rem;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
 }
 
 #below-caption {
@@ -374,4 +384,150 @@ h1 {
   line-height: 1.5;
   padding: 0.8rem 1.6rem;
   border-radius: 0 0 1.6rem 1.6rem;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.indexul {
+  grid-area: 1 / 2;
+  margin: 0;
+  min-width: 0;
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: 1fr;
+  grid-column-gap: 16px;
+  color: #1f2d3d;
+  padding-inline-start: 4rem;
+}
+
+.indexul li {
+  list-style-type: disc;
+  min-width: 0;
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: auto 1fr;
+  transition-duration: 0.52s;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+  color: inherit;
+  position: relative;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-radius: 12px;
+}
+
+.indexul li span {
+  width: 36px;
+  height: 36px;
+  border-radius: 24px;
+  display: inline-block;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  font-weight: 700;
+  border: 3px solid currentColor;
+}
+
+.ispan1 {
+  color: #b33e55;
+}
+
+.indexul li p {
+  /* font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 0.009em;
+  line-height: 1.25; */
+  padding-bottom: 0;
+  margin-top: 0;
+}
+
+.indexul li p strong {
+  font-size: 2.4rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.ispan2 {
+  color: #e67e32;
+}
+
+.ispan3 {
+  color: #d9b00e;
+}
+
+/* ************************************** */
+/* SLIDER  */
+/* ************************************** */
+#sliderr {
+  padding-top: 3.2rem;
+  background-color: rgb(249, 250, 252, 1);
+}
+
+h5 {
+  display: block;
+  font-size: 2.4rem;
+  color: #8492a6;
+  font-weight: 700;
+  letter-spacing: 0.009em;
+  line-height: 1.25;
+  margin: 0 auto;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-3325px);
+  }
+}
+.slider {
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+.slider::before,
+.slider::after {
+  background: linear-gradient(
+    to right,
+    rgb(249, 250, 252, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+}
+.slider .slide {
+  padding: 5rem;
+}
+
+.slide img {
+  height: 4rem;
+  filter: brightness(0);
+  opacity: 50%;
+  transition: all 0.3s;
+}
+
+.slide img:hover {
+  opacity: 100%;
+  cursor: pointer;
 }
