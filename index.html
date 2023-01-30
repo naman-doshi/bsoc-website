@@ -35,10 +35,14 @@
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li><a class="main-nav-link" href="#">Vision</a></li>
-          <li><a class="main-nav-link" href="#">Team</a></li>
+          <li>
+            <a class="main-nav-link" target="_self" href="/team/">Team</a>
+          </li>
           <li><a class="main-nav-link" href="#">Blog</a></li>
           <li><a class="main-nav-link" href="#">Events</a></li>
-          <li><a class="main-nav-link nav-cta" href="#">Join us!</a></li>
+          <li>
+            <a class="main-nav-link nav-cta" href="#email-signup">Join us!</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -69,7 +73,7 @@
             A student-run organisation equipping teenagers to make their mark on
             the world.
           </p>
-          <div class="hero-btn">Join our community</div>
+          <a class="hero-btn" href="#email-signup">Join our community</a>
         </div>
       </section>
       <section id="introduction">
@@ -104,7 +108,8 @@
                 <span class="ispan1">1</span>
                 <p>
                   <strong>Connect with like-minded teenagers</strong>With an
-                  active <a class="text-link" href="#">Discord server</a>,
+                  active
+                  <a class="text-link" href="#email-signup">Discord server</a>,
                   fortnightly meetings, and joint events with other schools,
                   you'll be sure to meet some awesome people along the way.
                 </p>
@@ -287,6 +292,59 @@
               />
             </div>
           </div>
+        </div>
+      </section>
+      <section id="app-demo">
+        <div class="cc">
+          <div class="demo-cont">
+            <h4>Coming this year</h4>
+            <h2>The best sharemarket game, period.</h2>
+            <p>
+              With two interfaces to suit all levels of experience, the ability
+              for any player to create their own competition, a live feed from
+              leading media outlets, and best-in-class learning resources, we're
+              blurring the boundary between fiction and reality.
+            </p>
+            <a class="hero-btn" href="#email-signup">Join the beta</a>
+          </div>
+        </div>
+
+        <div class="cont"><img src="assets/app-demo.png" alt="" /></div>
+      </section>
+      <section id="email-signup">
+        <div class="email-cont restricted-width">
+          <div class="email-text">
+            <h2>Stay in touch</h2>
+            <p>
+              We'll send you an email no more than once a month about our blog,
+              events, and projects. Plus, receive a link to our Discord server!
+            </p>
+          </div>
+          <form>
+            <div>
+              <label for="name" class="label">Name</label
+              ><input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Bill Gates"
+                required=""
+                class="inp"
+              />
+            </div>
+            <div>
+              <label for="email" class="label">Email</label
+              ><input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="bill@nsbsoc.com"
+                required=""
+                class="inp"
+              />
+            </div>
+            <button type="submit">Subscribe</button>
+          </form>
         </div>
       </section>
     </main>

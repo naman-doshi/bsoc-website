@@ -233,6 +233,7 @@ h1 {
 }
 
 .hero-btn {
+  text-decoration: none;
   margin-top: 3rem;
   display: flex;
   flex-direction: row;
@@ -530,4 +531,179 @@ h5 {
 .slide img:hover {
   opacity: 100%;
   cursor: pointer;
+}
+
+/* ************************************** */
+/*APP DEMO  */
+/* ************************************** */
+
+#app-demo {
+  margin: 8rem 0;
+  background: linear-gradient(
+    129.77deg,
+    #121223 16.97%,
+    #2a2a39 64.88%,
+    #193a52 94.21%
+  );
+  display: grid;
+  grid-template-columns: 80rem 1fr;
+  overflow: hidden;
+}
+
+.cont {
+  height: 100vh;
+  grid-area: 1 / 2;
+  display: flex;
+  align-items: center;
+}
+
+.cont img {
+  height: 70%;
+  border-radius: 2.4rem;
+}
+
+.cc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.demo-cont {
+  padding-left: 6.4rem;
+  padding-right: 6rem;
+}
+
+.demo-cont h2 {
+  color: rgb(249, 250, 252, 1);
+  font-size: 6rem;
+}
+
+.demo-cont h4 {
+  color: #3e92cc;
+}
+
+.demo-cont p {
+  color: #acafb3;
+  padding-bottom: 2.4rem;
+}
+
+.demo-cont a {
+  background-color: #3e92cc;
+  width: fit-content;
+  margin-top: 0;
+  font-size: 2rem;
+  padding: 1rem 2.4rem;
+}
+
+.demo-cont a:hover {
+  background-color: #3883b8;
+  cursor: pointer;
+}
+
+/* ************************************** */
+/* STAY IN TOUCH */
+/* ************************************** */
+
+#email-signup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.email-cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  color: #1f2d3d;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 13%);
+  overflow: hidden;
+  background: rgb(255, 255, 255, 0.45);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+
+.email-text {
+  padding: 3.2rem;
+}
+
+.email-text h2 {
+  font-weight: 700;
+  font-size: 4.8rem;
+}
+
+.email-text p {
+  max-width: 40ch;
+  color: #8492a6;
+  margin-top: 0.8rem;
+  padding-bottom: 0;
+  font-size: 1.6rem;
+}
+
+.email-cont form {
+  text-align: left;
+  display: grid;
+  align-items: end;
+  margin-top: 16px;
+  grid-template-columns: 1fr 1fr auto;
+  grid-gap: 16px;
+  padding: 3.2rem;
+}
+
+.inp {
+  background-color: #e0e6ed;
+  display: block;
+  width: 100%;
+  padding: 8px;
+  appearance: none;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  border: 1px solid;
+  border-radius: 4px;
+  color: inherit;
+  color: #1f2d3d;
+  font-family: inherit;
+  border-radius: base;
+  border: 0;
+}
+
+.label {
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+  width: 100%;
+  display: flex;
+  color: #1f2d3d;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  line-height: 1.375;
+  font-size: 2rem;
+}
+
+.email-cont form button {
+  box-sizing: border-box;
+  appearance: none;
+  text-align: center;
+  line-height: 2.4rem;
+  text-decoration: none;
+  font-size: 1.6rem;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: white;
+  background-color: #b33e55;
+  cursor: pointer;
+  border: none;
+  font-weight: 700;
+  border-radius: 99999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 13%);
+  letter-spacing: 0.009em;
+  transition: transform 0.125s ease-in-out, box-shadow 0.125s ease-in-out;
+  text-transform: uppercase;
+  margin-top: 0.8rem;
 }
