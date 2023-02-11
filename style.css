@@ -715,6 +715,7 @@ h5 {
 #blog {
   padding-left: 5rem;
   margin: 12rem 0;
+  margin-top: 16rem;
 }
 
 .blog-cont {
@@ -757,8 +758,8 @@ h5 {
 }
 
 .blogs {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -766,18 +767,21 @@ h5 {
   padding-right: 2rem;
 }
 
-.blogs div {
+.blog {
+  padding: 1.6rem;
   box-sizing: border-box;
-  aspect-ratio: 1 / 0.8;
   border-radius: 0.25rem;
   box-shadow: 0px 2px 4px rgb(0 0 0 / 5%);
   border: solid;
   border-color: #eaecef;
   border-width: 1px;
-  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: fit-content;
 }
 
-.blogs div:hover {
+.blog:hover {
   border-width: 2px;
   border-color: #a4a4fa;
   background: #f0f0fe;
@@ -789,4 +793,217 @@ h5 {
   border-radius: 0.25rem;
   padding-inline-start: 0.25rem;
   padding-inline-end: 0.25rem;
+}
+
+.blog h2 {
+  font-size: 2.4rem;
+  margin-top: 1.6rem;
+}
+
+.blog img {
+  width: 80%;
+  border-radius: 0.25rem;
+}
+
+.tag {
+  padding: 4px 8px;
+  transition: background 300ms ease 0s;
+  border-radius: 1000px;
+  font-size: 1.3rem !important;
+  background-color: rgba(242, 242, 242, 1);
+  color: rgba(41, 41, 41, 1) !important;
+  width: fit-content;
+}
+
+.tag:hover {
+  cursor: pointer;
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
+.blog span {
+  color: rgba(117, 117, 117, 1);
+  font-size: 1.4rem;
+}
+
+.blog-footer {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 0.8rem;
+}
+
+.tempp {
+  width: 85% !important;
+}
+
+/* ************************************** */
+/* EVENTS */
+/* ************************************** */
+
+#events {
+  margin: 12rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#events h2 {
+  font-size: 5rem;
+}
+
+.events-text {
+  text-align: center;
+  line-height: 1.75 !important;
+}
+
+.events {
+  height: 200px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1px;
+  background-color: #e0e6ed;
+  border-radius: 12px;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 6%), 0 8px 12px rgb(0 0 0 / 13%);
+  overflow: hidden;
+}
+
+.event-box {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.date-box {
+  padding: 1.6rem;
+  color: #1f2d3d;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.info-box {
+  background-color: white;
+  flex-grow: 1;
+  padding: 0.8rem 1.6rem;
+}
+
+.imp {
+  color: white;
+  background-color: #b33e55;
+}
+
+.info-box h2 {
+  font-size: 2.4rem !important;
+}
+
+.info-box p {
+  font-size: 1.6rem !important;
+  margin-top: 0.8rem !important;
+  color: #8492a6 !important;
+}
+
+/* ************************************** */
+/* FOOTER */
+/* ************************************** */
+
+.footer {
+  margin-top: 12rem;
+  padding: 12.8rem 0;
+  border-top: 1px solid #eee;
+}
+
+.grid--footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  margin-bottom: 3.2rem;
+  margin-left: 0;
+  justify-content: flex-start;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #767676;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 2.4rem;
+  padding-bottom: 0;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.address {
+  margin-bottom: 1.6rem;
+  padding-bottom: 0;
+  font-size: 1.6rem;
+  margin-top: 0;
+}
+
+.contacts p {
+  margin-top: 0 !important;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  margin-top: 0;
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
+}
+
+.smalls {
+  margin-top: 3.6rem;
+  font-size: 1.2rem;
+}
+
+.container {
+  /* 1140px */
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
 }

@@ -35,13 +35,13 @@
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li><a class="main-nav-link" href="#">Vision</a></li>
-          <li>
+          <!-- <li>
             <a class="main-nav-link" target="_self" href="/team/">Team</a>
-          </li>
+          </li> -->
           <li>
             <a class="main-nav-link" target="_self" href="/blog/">Blog</a>
           </li>
-          <li><a class="main-nav-link" href="#">Events</a></li>
+          <li><a class="main-nav-link" href="/events/">Events</a></li>
           <li>
             <a class="main-nav-link nav-cta" href="#email-signup">Join us!</a>
           </li>
@@ -313,6 +313,45 @@
 
         <div class="cont"><img src="assets/app-demo.png" alt="" /></div>
       </section>
+      <section id="events">
+        <h4 class="h41">Where the magic happens</h4>
+        <h2>Events @ BSOC</h2>
+        <p class="events-text">
+          AMAs, tutorials, competitions, games, & weekly fun in the BSOC
+          community. <br />
+          Check back closer to the date for more information!
+        </p>
+        <div class="restricted-width events">
+          <div class="event-box">
+            <div class="date-box imp">Week 5</div>
+            <div class="info-box">
+              <h2>Intro to Commerce/Business</h2>
+              <p>By BSOC Executives + Mrs Shehata</p>
+            </div>
+          </div>
+          <div class="event-box">
+            <div class="date-box imp">Week 6</div>
+            <div class="info-box">
+              <h2>ASX Sharemarket Game signups</h2>
+              <p>Compete with others to win cash prizes!</p>
+            </div>
+          </div>
+          <div class="event-box">
+            <div class="date-box">Week 7</div>
+            <div class="info-box">
+              <h2>Investing 101</h2>
+              <p>By BSOC Executives + Michael Li</p>
+            </div>
+          </div>
+          <div class="event-box">
+            <div class="date-box">Week 8</div>
+            <div class="info-box">
+              <h2>AMA with Boswell Lin</h2>
+              <p>Learn about a career in quant finance!</p>
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="blog">
         <div class="blog-cont">
           <div class="blog-text">
@@ -326,16 +365,66 @@
               Read our monthly economic & business reviews right here on our
               website, and learn how business drives the world.
             </p>
-            <a class="hero-btn" href="#email-signup">Browse our articles</a>
+            <a class="hero-btn" href="/blog/">Browse our articles</a>
           </div>
           <div class="blogs">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div class="blog">
+              <img
+                src="https://static01.nyt.com/images/2022/08/24/multimedia/24stocks-powell/24stocks-powell-articleLarge.jpg?quality=75&auto=webp&disable=upscale0"
+                alt="blog image"
+              />
+
+              <h2>
+                Interest rates show signs of easing as hyperinflation affects
+                the world
+              </h2>
+              <div class="blog-footer">
+                <span>Nov 29, 2022</span>
+                <span class="tag">Inflation</span>
+              </div>
+            </div>
+            <div class="blog">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf_XmATEBlj7rJv-AnAOnXlvR0HhToaBRiyg&usqp=CAU"
+                alt="blog image"
+              />
+
+              <h2>
+                FTX collapses and layoffs wreak havoc on technology companies
+              </h2>
+              <div class="blog-footer">
+                <span>Nov 22, 2022</span>
+                <span class="tag">FTX</span>
+              </div>
+            </div>
+            <div class="blog">
+              <img
+                src="https://uploads-ssl.webflow.com/6259e28095841e647d898ea8/63dda9d1245c5a7a953c0e0d_inflation-scaled.jpeg"
+                class="tempp"
+              />
+
+              <h2>Inflation eases as Wall Street & the ASX surge</h2>
+              <div class="blog-footer">
+                <span>Nov 21, 2022</span>
+                <span class="tag">Wall Street</span>
+              </div>
+            </div>
+            <div class="blog">
+              <img
+                src="https://ichef.bbci.co.uk/news/976/cpsprodpb/52DC/production/_128521212_4cf66d5e5d4e76a52724a2247ef5843468d23dea853_124_4754_26741000x563.jpg"
+                class="tempp"
+              />
+
+              <h2>Is Trussonomics over before it really begun?</h2>
+              <div class="blog-footer">
+                <span>Oct 16, 2022</span>
+                <span class="tag">Britain</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
       <section id="email-signup">
         <div class="email-cont restricted-width">
           <div class="email-text">
@@ -345,12 +434,16 @@
               events, and projects. Plus, receive a link to our Discord server!
             </p>
           </div>
-          <form>
+          <form
+            method="POST"
+            action="https://script.google.com/macros/s/AKfycbzmNvn64kdAMPawXhGRo4ysOr1VLmhKkOaPzxhRgO5N7BM-fPbZihIay5CsJ3l0F-Ue/exec"
+            id="mailing-list"
+          >
             <div>
               <label for="name" class="label">Name</label
               ><input
                 type="text"
-                name="name"
+                name="Name"
                 id="name"
                 placeholder="Bill Gates"
                 required=""
@@ -361,7 +454,7 @@
               <label for="email" class="label">Email</label
               ><input
                 type="email"
-                name="email"
+                name="Email"
                 id="email"
                 placeholder="bill@nsbsoc.com"
                 required=""
@@ -374,7 +467,64 @@
       </section>
     </main>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          <div class="logo-section footer-logo">
+            <img class="logo" alt="logo" src="assets/logo.svg" />
+            <h2 class="logo-text">NSB BSOC</h2>
+          </div>
+
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="https://discord.gg/nXMRXrR9"
+                ><ion-icon class="social-icon" name="logo-discord"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a
+                class="footer-link"
+                href="https://www.linkedin.com/company/nsb-business-society/"
+                ><ion-icon class="social-icon" name="logo-linkedin"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="mailto:nsbhsbsoc@gmail.com"
+                ><ion-icon class="social-icon" name="mail"></ion-icon
+              ></a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            © 2023 North Sydney Boys High School Business Society.
+          </p>
+        </div>
+
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+            <p class="address">127 Falcon St, North Sydney NSW 2060</p>
+            <p>
+              <a class="footer-link" href="tel:+61401935135">0401935135</a
+              ><br />
+              <a class="footer-link" href="mailto:nsbhsbsoc@gmail.com"
+                >nsbhsbsoc@gmail.com</a
+              >
+            </p>
+          </address>
+        </div>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Links</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="/vision/">Our vision</a></li>
+            <li><a class="footer-link" href="/blog/">Blog</a></li>
+            <li><a class="footer-link" href="/events/">Events</a></li>
+            <li><a class="footer-link" href="#email-signup">Join us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
