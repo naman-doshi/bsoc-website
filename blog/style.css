@@ -122,6 +122,7 @@ p {
   display: flex;
   justify-content: center;
   gap: 1.6rem;
+  align-items: center;
 }
 
 .logo-text {
@@ -129,6 +130,7 @@ p {
   font-weight: 600;
   color: #b33e55;
   text-decoration: none;
+  margin-top: 0;
 }
 
 .restricted-width {
@@ -231,9 +233,13 @@ span {
   width: 100%;
 }
 
-a:link,
-a:visited,
-a:hover,
-a:active {
+h2 a:link,
+h2 a:visited,
+h2 a:hover,
+h2 a:active {
   all: unset;
+}
+
+.blog-header h2 {
+  text-align: center;
 }
