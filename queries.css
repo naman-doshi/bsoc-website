@@ -1,0 +1,55 @@
+@media (max-width: 100em) {
+  .info-box h2 {
+    font-size: 2rem !important;
+  }
+
+  .info-box p {
+    font-size: 1.2rem !important;
+    margin-top: 0.6rem !important;
+  }
+}
+
+@media (max-width: 90em) {
+  .restricted-width {
+    width: 85%;
+  }
+}
+
+@media (max-width: 75em) {
+  .demo-cont h2 {
+    font-size: 3.6rem;
+  }
+
+  .demo-cont p {
+    color: #acafb3;
+    padding-bottom: 1.6rem;
+  }
+
+  #app-demo {
+    grid-template-columns: 50rem 1fr;
+  }
+
+  .blog-text h2 {
+    font-size: 3.6rem;
+  }
+  .blog-text p {
+    margin-top: 1.2rem;
+    font-size: 1.6rem;
+    padding-bottom: 1.6rem;
+  }
+  .blog-cont {
+    display: grid;
+    grid-template-columns: 40rem auto;
+    padding-left: 4rem;
+    grid-gap: 2rem;
+  }
+}
+
+@media (max-width: 69em) {
+  .restricted-width {
+    width: 95%;
+  }
+  #blog {
+    margin-bottom: 6rem;
+  }
+}

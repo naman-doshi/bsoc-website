@@ -914,7 +914,6 @@ h5 {
 }
 
 .grid--footer {
-  grid-template-columns: 1.5fr 1.5fr 1fr;
 }
 
 .logo-col {
@@ -1003,7 +1002,8 @@ h5 {
 }
 
 .grid {
-  display: grid;
-  column-gap: 6.4rem;
-  row-gap: 9.6rem;
+  gap: 6.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
