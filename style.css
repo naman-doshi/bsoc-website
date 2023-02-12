@@ -357,7 +357,7 @@ h1 {
   grid-area: 1 / 1;
   aspect-ratio: 1 / 0.8;
   width: 100%;
-  border-radius: 1.6rem;
+  border-radius: 16px;
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -390,7 +390,7 @@ h1 {
   font-size: 1.4rem;
   line-height: 1.5;
   padding: 0.8rem 1.6rem;
-  border-radius: 0 0 1.6rem 1.6rem;
+  border-radius: 0 0 16px 16px;
   -webkit-user-select: none; /* Safari */
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* IE10+/Edge */
@@ -405,7 +405,7 @@ h1 {
   font-size: 1.4rem;
   line-height: 1.5;
   padding: 0.8rem 1.6rem;
-  border-radius: 0 0 1.6rem 1.6rem;
+  border-radius: 0 0 16px 16px;
   -webkit-user-select: none; /* Safari */
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* IE10+/Edge */
@@ -580,7 +580,7 @@ h5 {
 
 .cont img {
   height: 70%;
-  border-radius: 2.4rem;
+  border-radius: 24px;
 }
 
 .cc {
@@ -609,7 +609,7 @@ h5 {
 }
 
 .demo-cont a {
-  background-color: #3e92cc;
+  background-color: z;
   width: fit-content;
   margin-top: 0;
   font-size: 2rem;
@@ -637,7 +637,7 @@ h5 {
   justify-content: space-between;
 
   color: #1f2d3d;
-  border-radius: 1.2rem;
+  border-radius: 12px;
   box-shadow: 0 4px 8px rgb(0 0 0 / 13%);
   overflow: hidden;
   background: rgb(255, 255, 255, 0.45);
@@ -791,7 +791,7 @@ h5 {
 .blog {
   padding: 1.6rem;
   box-sizing: border-box;
-  border-radius: 0.25rem;
+  border-radius: 2.5px;
   box-shadow: 0px 2px 4px rgb(0 0 0 / 5%);
   border: solid;
   border-color: #eaecef;
@@ -811,7 +811,7 @@ h5 {
 .high2 {
   color: #9595f9;
   background: #f0f0fe;
-  border-radius: 0.25rem;
+  border-radius: 2.5px;
   padding-inline-start: 0.25rem;
   padding-inline-end: 0.25rem;
 }
@@ -823,7 +823,7 @@ h5 {
 
 .blog img {
   width: 80%;
-  border-radius: 0.25rem;
+  border-radius: 2.5px;
 }
 
 .tag {
