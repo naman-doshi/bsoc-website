@@ -123,6 +123,11 @@ p {
   justify-content: center;
   gap: 1.6rem;
   align-items: center;
+  text-decoration: none;
+}
+
+.logo-section:visited {
+  text-decoration: none;
 }
 
 .logo-text {
