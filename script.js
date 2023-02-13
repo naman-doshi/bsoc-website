@@ -126,8 +126,6 @@ window.addEventListener("load", function () {
     fetch(action, {
       method: "POST",
       body: data,
-    }).then(() => {
-      alert("Welcome to BSOC!");
     });
   });
 });
