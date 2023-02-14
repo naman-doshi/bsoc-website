@@ -121,7 +121,6 @@ window.addEventListener("load", function () {
   const form = document.getElementById("mailing-list");
   form.addEventListener("submit", function (e) {
     e.preventDefault();
-    form.reset();
     const data = new FormData(form);
     const action = e.target.action;
     fetch(action, {

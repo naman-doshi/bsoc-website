@@ -466,7 +466,10 @@
                 class="inp"
               />
             </div>
-            <button type="submit" onclick="alert('Welcome to BSOC')">
+            <button
+              type="submit"
+              onclick="alert('Welcome to BSOC');const form = document.getElementById('mailing-list');form.reset();"
+            >
               Subscribe
             </button>
           </form>
