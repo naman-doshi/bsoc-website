@@ -209,3 +209,15 @@ main {
 .h41 {
   color: #b33e55;
 }
+
+.text-link {
+  color: #b33e55;
+  text-decoration: underline;
+  text-underline-position: under;
+  text-underline-offset: 0.2rem;
+  transition: all 0.3s;
+}
+
+.text-link:hover {
+  color: #d18b99;
+}
